@@ -76,6 +76,6 @@ print(loss.item())
 
 dot = torchviz.make_dot(pred_quality)
 dot.format = 'jpeg'
-dot.render('winequality-mode')
+dot.render('winequality-model')
 summary(best_model, input_size=(1, best_hidden, 11))
 
